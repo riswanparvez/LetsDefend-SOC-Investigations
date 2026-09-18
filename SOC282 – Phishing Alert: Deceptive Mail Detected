@@ -20,6 +20,8 @@ My goal was to determine whether the email was malicious, whether the user inter
 - **Source IP:** 103.80.134.63
 - **Device Action:** Allowed
 
+![Alert Overview](screenshots/alert_overview.png)
+
 ---
 
 ## Investigation
@@ -48,6 +50,7 @@ The logs showed that the user:
 
 At this point, the alert could be confirmed as a **True Positive**, because the malicious content had not only reached the user but had also been executed.
 
+![Malicious Artifact Analysis](screenshots/artifacts.png)
 ---
 
 ## Response
@@ -61,6 +64,8 @@ I took the following actions:
 - Classified the alert as a True Positive
 
 Containing the endpoint was important because execution had already occurred, which meant there was a risk of further malicious activity on the system.
+
+![Containment Actions](screenshots/containment.png)
 
 ---
 
